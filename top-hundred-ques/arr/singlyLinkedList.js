@@ -24,6 +24,16 @@ function insertAtFront(head, newData)
     return newNode;
 }
 
+function insertAtEnd(head, data) {
+  let last = head;
+  
+  while(last !== null) {
+    last = last.next
+  }
+  last.next = data;
+}
+
+
 // Create a hard-coded linked list:
     // 10 -> 20 -> 30 -> 40
     let head = new Node(10);
