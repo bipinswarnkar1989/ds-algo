@@ -11,6 +11,19 @@ function traverseLinkedList(head){
   }
 }
 
+function insertAtFront(head, newData)
+{
+    // Create a new node with the given data
+    const newNode = new Node(newData);
+
+    // Make the next of the new node point to the current
+    // head
+    newNode.next = head;
+
+    // Return the new node as the new head of the list
+    return newNode;
+}
+
 // Create a hard-coded linked list:
     // 10 -> 20 -> 30 -> 40
     let head = new Node(10);
