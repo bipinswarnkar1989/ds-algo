@@ -52,3 +52,13 @@ function reverseLl(head) {
     }
     return prev;
 }
+
+/* Optimized Big O:
+| Operation       | Complexity |
+| --------------- | ---------- |
+| Find middle     | O(n)       |
+| Reverse half    | O(n)       |
+| Compare halves  | O(n)       |
+| Total **Time**  | **O(n)**   |
+| Total **Space** | **O(1)**   |
+*/
